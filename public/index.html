@@ -1,1 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Professional Photographer | Wedding, Portrait & Event Photography</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional photography services for weddings, portraits, events and commercial shoots. High-quality images, fast delivery and affordable pricing.">
+<meta name="keywords" content="professional photographer, wedding photography, portrait photographer, event photography">
+<meta name="author" content="Professional Photographer">
+<!-- Open Graph -->
+<meta property="og:title" content="Professional Photography Services">
+<meta property="og:description" content="Wedding, portrait, event & commercial photography">
+<meta property="og:image" content="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2920/2920277.png">
+
+<style>
+:root {
+  --primary:#ff6a00;
+  --dark:#111;
+  --light:#f7f7f7;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height:1.6;
+  color:#222;
+}
+
+/* ================= HEADER ================= */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  z-index: 999;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 20px 40px;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+/* ================= SERVICES ================= */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+}
+
+.service-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ================= GALLERY ================= */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ================= WHY US ================= */
+.why {
+  background: var(--light);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 25px;
+}
+
+.why-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: var(--dark);
+  color: #ccc;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 14px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .nav ul {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    display: none;
+  }
+  .nav ul.active {
+    display: flex;
+  }
+  .nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#" class="logo">Photo<span>Studio</span></a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul id="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T4RQBWLTGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T4RQBWLTGH');
+</script>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Professional Photography Services</h1>
+    <p>Wedding, portrait, event and commercial photography with premium quality images and fast delivery.</p>
+    <a href="#contact" class="btn">Book a Photoshoot</a>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-title"><h2>Our Services</h2></div>
+    <div class="services">
+      <div class="service-box">Wedding Photography</div>
+      <div class="service-box">Portrait Photography</div>
+      <div class="service-box">Event Photography</div>
+      <div class="service-box">Commercial Photography</div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="why">
+  <div class="container">
+    <div class="section-title"><h2>Photography Portfolio</h2></div>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Wedding photography">
+      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" alt="Portrait photography">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="Event photography">
+      <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f" alt="Commercial photography">
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-title"><h2>Book Your Photoshoot</h2></div>
+    <p>Contact us today to discuss your photography requirements and get a personalized quote.</p>
+    <a href="mailto:your@email.com" class="btn">Contact Now</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 PhotoStudio. All Rights Reserved.
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
+
+
+
+
 
